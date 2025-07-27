@@ -3,12 +3,18 @@
 
 Welcome to **ClubVerse**, a full-stack Club Management System built with Python, MySQL, and CustomTkinter. Designed to empower students and admins to explore, manage, and participate in extracurricular communities effortlessly.
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
-![MySQL](https://img.shields.io/badge/MySQL-Dynamic-Orange?logo=mysql)
-![UI Toolkit](https://img.shields.io/badge/CustomTkinter-Stylish%20UI-purple?logo=tkinter)
-![License](https://img.shields.io/github/license/your-username/club-management-system)
-
+<p align="center"> 
+<a href="https://react.dev/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="70" height="70"/> </a>
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss" width="70" height="70"/> </a>
+<a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://attact.co/_next/image?url=%2Fframer-motion-logo.png&w=1080&q=75" alt="figma" width="90" height="80"/> </a>
+<a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=threejs" alt="Three.js" width="70" height="70"/> </a> 
+ <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=vite" alt="vite" width="70" height="70"/> </a>
+</p>
 ---
+
+## 📸 Screenshots
+
+*(upcoming)*
 
 ## 🎯 Features
 
@@ -51,6 +57,22 @@ Welcome to **ClubVerse**, a full-stack Club Management System built with Python,
 
 ```bash
 git clone https://github.com/your-username/club-management-system
+```
+```sh
 cd club-management-system
-pip install customtkinter mysql-connector-python
+```
+```sh
+pip install customtkinter mysql-connector-
+```
+```sh
 python main.py
+```
+
+👨‍💻 Author
+ 
+- Kalana Yasassri  <a href="https://github.com/DarkFeed2005" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=github" alt="github" width="20" height="20"/> </a>
+- LinkedIn <a href="https://www.linkedin.com/in/kalana-yasassri-684591251/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="linkedin" width="20" height="20"/> </a>
+- Instagram <a href="https://www.instagram.com/kalana_yasassri/" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=instagram" alt="instagram" width="20" height="20"/> </a> 
+  
+🎨 License
+This project is open-source under the MIT License.
