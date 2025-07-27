@@ -56,10 +56,10 @@ Welcome to **ClubVerse**, a full-stack Club Management System built with Python,
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/club-management-system
+git clone https://github.com/DarkFeed2005/Club-management-system.git
 ```
 ```sh
-cd club-management-system
+cd Club-management-system
 ```
 ```sh
 pip install customtkinter mysql-connector-
