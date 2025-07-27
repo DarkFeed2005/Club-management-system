@@ -65,7 +65,7 @@ role_menu.set("User")  # Default role
 def login():
     username = username_entry.get().strip()
     password = password_entry.get().strip()
-    selected_role = role_menu.get()
+    selected_role = role_menu.get().lower()
 
     if not username or not password or not selected_role:
         messagebox.showerror("Error", "Please fill in all fields.")
@@ -84,9 +84,13 @@ def login():
         result = cursor.fetchone()
 
         if result:
-            messagebox.showinfo("Success", f"Welcome, {username} ({selected_role})!")
+            messagebox.showinfo("Success", f"Welcome, {username} ({selected_role.title()})!")
             app.destroy()
-            subprocess.Popen(["python", "dashboard.py"])
+
+            if selected_role == "admin":
+                subprocess.Popen(["python", "admin_dashboard.py"])
+            else:
+                subprocess.Popen(["python", "user_dashboard.py", username])
         else:
             messagebox.showerror("Login Failed", "Invalid credentials or role mismatch.")
 

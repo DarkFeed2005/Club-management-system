@@ -26,7 +26,7 @@ def valid_email(email):
 app = CTk()
 app.iconbitmap("img/app_icon.ico")
 app.title("Sign-Up - Join the Club")
-app.geometry("700x600+650+300")
+app.geometry("800x600+500+300")
 app.resizable(False, False)
 
 # --------- Load Icons ---------
@@ -36,7 +36,7 @@ back_icon = CTkImage(Image.open("img/signup-icon.png"), size=(17, 17))
 
 # --------- Animated GIF ---------
 frames = [
-    ImageTk.PhotoImage(frame.copy().convert("RGBA").resize((480, 780)))
+    ImageTk.PhotoImage(frame.copy().convert("RGBA").resize((620, 780)))
     for frame in ImageSequence.Iterator(Image.open("img/animated2.gif"))
 ]
 def animate_gif(counter=0):
@@ -48,7 +48,7 @@ gif_label.pack(expand=True, side="left")
 animate_gif()
 
 # --------- Right-side Frame ---------
-frame = CTkFrame(master=app, width=400, height=780, fg_color="#ffffff")
+frame = CTkFrame(master=app, width=370, height=780, fg_color="#ffffff")
 frame.pack_propagate(False)
 frame.pack(expand=True, side="right")
 
@@ -118,7 +118,7 @@ def register_user():
         confirm_entry.delete(0, 'end')
         role_option.set("User")
         app.destroy()
-        subprocess.Popen(["python", "dashboard.py"])
+        subprocess.Popen(["python", "login.py"])
     except mysql.connector.Error as err:
         status_label.configure(text=f"❌ DB Error: {err}", text_color="red")
 

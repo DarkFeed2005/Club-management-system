@@ -14,3 +14,21 @@ CREATE TABLE todos (
     task TEXT,
     completed BOOLEAN DEFAULT FALSE
 );
+
+CREATE TABLE clubs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE enrollments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    club_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (club_id) REFERENCES clubs(id)
+);
+
+SELECT * FROM notifications
+WHERE club_id IN (
+  SELECT club_id FROM enrollments WHERE user_id = ?
+)
