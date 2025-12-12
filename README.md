@@ -59,6 +59,12 @@ git clone https://github.com/DarkFeed2005/Club-management-system.git
 cd Club-management-system
 ```
 ```sh
+python -m venv venv
+```
+```sh
+.\venv\Scripts\Activate.ps1
+```
+```sh
 pip install customtkinter mysql-connector-
 ```
 ```sh
